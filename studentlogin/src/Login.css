@@ -1,0 +1,98 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background styling */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login container */
+.login-container {
+  width: 350px;
+  padding: 30px;
+  background-color: rgba(197, 221, 231, 0.95); /* Slightly transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  opacity: .95;
+}
+
+/* Title styling */
+.login-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+  color: #ff4a4a;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #a6c9f1;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #7ad8f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #5ea6b0;
+}
+
+/* Optional responsive styling for smaller screens */
+@media (max-width: 400px) {
+  .login-container {
+    width: 90%;
+  }
+}
